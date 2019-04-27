@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `user_entity`;
+CREATE TABLE `user_entity`(
+	`id` BIGINT (15) NOT NULL AUTO_INCREMENT COMMENT 'id',
+	`username` VARCHAR (50) DEFAULT '' COMMENT 'username',
+	`nickname` VARCHAR (50) DEFAULT '' COMMENT 'nickname',
+	`create_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'createTime',
+	PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '`user_entity`';
